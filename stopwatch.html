@@ -12,6 +12,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW6 - JQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jolly+Lodger&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous">
@@ -45,16 +48,46 @@
             $('p').attr('id', 'timer');
             var $timer = $('#timer');
             $timer.addClass("timer-background")
+            //Outer Background
+            $('body').css({
+                "background-image": "url('block.jpg')",
+                "height": "100vh",
+                "background-repeat": "no-repeat",     
+                "background-position": "center",  
+                "background-size": "300px 300px",
+                "display": "flex",
+                "justify-content": "center",
+                "align-items": "center",
+                "text-align": "center",
+                "margin": "0px",
+                "padding": "0px",
+                "box-sizing": "border-box"
+            })
+
+            //Inner Background
+            $(".wrapper").css({
+                "font-family": "'Inconsolata', monospace",
+                "color": "green",
+                "background-image": "url('iron.webp')",
+                "width": "180px",
+                "height": "180px",
+                "background-repeat": "no-repeat",       
+                "background-size": "180px 180px",
+            })
 
             $(".timer-background").css({
+                
+                "color": "black",
                 "text-decoration": "overline underline",
                 "padding-top": "10px",
                 "padding-bottom": "10px",
+                "margin": "5px 19px",
                 "width": "140px",
                 "text-align": "center",
                 "text-decoration-color": "blue",
                 "text-decoration-thickness": "3px",
-                "background-color": "gray"
+                "background-color": "gray",
+                "border": "2px black solid"
             });
 
             //Style Buttons
