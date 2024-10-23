@@ -52,6 +52,23 @@
                 "background-color": "gray"
             });
 
+            //Style Buttons
+            var buttonStyles = {
+                "background-color": "#5000b3",
+                "color": "#eddeff",
+                "text-align": "center",
+                "border": "2px solid #04AA6D",
+                "border-radius": "12px"
+            };
+            
+            var $button = $('button');
+            
+            $buttonStart.addClass("button");
+            $buttonReset.addClass("button");
+            $buttonStop.addClass("button");
+
+            $button.css(buttonStyles);
+
             $buttonStart.on("click", function () {
                 clearInterval(interval);
                 interval = setInterval(startTimer, 10);
