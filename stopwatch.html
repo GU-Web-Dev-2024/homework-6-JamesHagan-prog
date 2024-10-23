@@ -75,9 +75,10 @@
             $buttonStart.on("click", function () {
                 clearInterval(interval);
                 clearInterval(aniInterval);
-                change = 0;
+                change = 1.0;
+                flag = -1;
                 interval = setInterval(startTimer, 10);
-                aniInterval = setInterval(animation, 100);
+                aniInterval = setInterval(animation, 50);
                 $timer.css("background-color", "green");
             });
 
